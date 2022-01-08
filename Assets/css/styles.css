@@ -39,6 +39,7 @@ h2 {
 
 p {
     font-size: 15px;
+    /* justify-content: center; */
 }
 
 nav {
@@ -61,8 +62,14 @@ a {
     font-size: 25px;
 }
 
+figure {
+    display: inline-flex;
+    justify-content: center;
+}
+
 footer {
     font-family: 'Dancing Script', cursive;
+    text-align:center;
 }
 
 #profile {
@@ -106,12 +113,19 @@ footer {
 
 .portfolio-info {
     width: 80%;
-    padding-left: 20px;
+    padding: 0 40px 0 20px;
 }
 
-.portfolio-work {
+/* .portfolio-work {
     height: 100px;
     width: 100px;
+} */
+
+.portfolio-images {
+    height: 200px;
+    width: auto;
+    padding: 20px;
+    border: 2px solid #9ebec7;
 }
 
 .portfolio-contact {
