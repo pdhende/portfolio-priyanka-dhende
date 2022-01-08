@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: lightcyan;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    height: 100px;
+    background-color: #517d9b;
+}
+
+h1 {
+    width: 25%;
+    margin-top: 20px;
+    text-align: end;
+    font-weight: bold;
+    font-size: 45px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #2a607c;
+    background-color: #9ebec7;
+    display: inline-block;
+}
+
+h2,
+p {
+    color: #5e6275;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2 {
+    margin-right: 10px;
+    font-size: 50px;
+}
+
+p {
+    font-size: 15px;
+}
+
+nav {
+    float: right;
+    padding-top: 20px;
+    margin-right: 20px;
+}
+
+ul,
+li {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+a {
+    color: #9ebec7;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+footer {
+    font-family: 'Dancing Script', cursive;
+}
+
+#profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    flex-shrink: 0;
+    z-index: 1;
+}
+
+/* .portfolio-intro {
+    display: flex;
+    flex-direction: column;
+} */
+
+.portfolio-img {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/background_img.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.portfolio-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.portfolio-column {
+    /* flex: 1 0 100%; */
+    padding: 1.5rem;
+    flex-direction: column;
+    margin-bottom: 1.5 rem;
+}
+
+.portfolio-title {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    border-right: 3px solid #2a607c;
+    width: 20%;
+    padding-right: 10px;
+}
+
+.portfolio-info {
+    /* display: inline-flex; */
+    width: 80%;
+    padding-left: 20px;
+}
+
+.portfolio-work {
+    height: 100px;
+    width: 100px;
+}
+
+.portfolio-contact {
+    list-style-type: none;
+}
