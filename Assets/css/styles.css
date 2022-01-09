@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body {
@@ -20,7 +21,6 @@ h1 {
     text-align: end;
     font-weight: bold;
     font-size: 45px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #2a607c;
     background-color: #9ebec7;
     display: inline-block;
@@ -29,17 +29,12 @@ h1 {
 h2,
 p {
     color: #5e6275;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h2 {
     margin-right: 10px;
     font-size: 50px;
-}
-
-p {
-    font-size: 15px;
-    /* justify-content: center; */
+    text-align: end;
 }
 
 nav {
@@ -62,33 +57,40 @@ a {
     font-size: 25px;
 }
 
-figure {
+p {
+    font-size: 20px;
+}
+
+figure,
+img {
+    position: relative;
     display: inline-flex;
     justify-content: center;
+    padding: 20px;
 }
 
 footer {
     font-family: 'Dancing Script', cursive;
     text-align:center;
+    color: #2a607c;
 }
 
 #profile {
     display: flex;
-    flex-direction: column;
+    position: absolute;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     height: 150px;
     width: 150px;
     flex-shrink: 0;
     z-index: 1;
+    border-radius: 50%;
+    float: right;
 }
 
-/* .portfolio-intro {
-    display: flex;
-    flex-direction: column;
-} */
-
 .portfolio-img {
+    position: relative;
     height: 250px;
     width: 100%;
     margin-bottom: 25px;
@@ -116,16 +118,26 @@ footer {
     padding: 0 40px 0 20px;
 }
 
-/* .portfolio-work {
-    height: 100px;
-    width: 100px;
-} */
+.portfolio-para {
+    font-size: 15px;
+}
 
 .portfolio-images {
-    height: 200px;
-    width: auto;
-    padding: 20px;
-    border: 2px solid #9ebec7;
+    height: 250px;
+    width: 400px;
+    padding: 0;
+    border: 5px solid #9ebec7;
+}
+
+.portfolio-heading {
+    position: absolute;
+    color: #2a607c;
+    background-color:#9ebec7;
+    z-index: 1;
+    text-decoration: none;
+    top: 40px;
+    height: 70px;
+    padding: 10px;
 }
 
 .portfolio-contact {
