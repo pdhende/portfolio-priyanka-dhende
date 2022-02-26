@@ -14,18 +14,13 @@ body {
 /* header {
     height: 100px;
     background-color: #517d9b;
-}
+}*/
 
 h1 {
-    width: 25%;
-    margin-top: 20px;
-    text-align: end;
+    color: #254D32;
+    transform: translate(375px, 130px);
     font-weight: bold;
-    font-size: 2.5rem;
-    color: #2a607c;
-    background-color: #9ebec7;
-    display: inline-block;
-} */
+}
 
 h2,
 p {
@@ -81,7 +76,7 @@ section > div {
 #profile {
     /* display: flex; */
     position: absolute;
-    transform: translate(440px, 25px);
+    transform: translate(440px, -25px);
     /* justify-content: center; */
     /* align-items: center; */
     /* height: 150px; */
@@ -100,13 +95,14 @@ section > div {
 .nav-link {
     color: #2a607c;
     font-size: 1.2rem;
+    font-weight:bold;
 }
 
 .portfolio-intro {
     position: absolute;
     /* top: 175px;
     margin: 10px; */
-    transform: translate(375px, 190px);
+    transform: translate(380px, 120px);
     /* background-color: #9ebec7; */
     color: #254D32;
     font-size: 1.5rem;
@@ -133,7 +129,7 @@ section > div {
     justify-content: flex-end; */
     /* align-items: center;*/
     position: relative;
-    height: 350px;
+    height: 330px;
     width: 100%;
     /* margin-bottom: 25px; */
     background-image: url("../images/header-image.jpeg");
