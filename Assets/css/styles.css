@@ -11,7 +11,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-header {
+/* header {
     height: 100px;
     background-color: #517d9b;
 }
@@ -25,7 +25,7 @@ h1 {
     color: #2a607c;
     background-color: #9ebec7;
     display: inline-block;
-}
+} */
 
 h2,
 p {
@@ -39,24 +39,21 @@ h2 {
 }
 
 nav {
-    float: right;
-    padding-top: 20px;
-    margin-right: 20px;
+    /* background-color:#9ebec7; */
+    background-color:#76BC84;
+    /* background-color:#92C99D; */
 }
 
 ul,
 li {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    list-style-type: none;
-    display: inline-block;
-    margin: 10px;
 }
 
-a {
+/* a {
     color: #9ebec7;
     font-weight: bold;
     font-size: 25px;
-}
+} */
 
 p {
     line-height: 2em;
@@ -82,23 +79,36 @@ section > div {
 
 /* Id selectors */
 #profile {
-    display: flex;
+    /* display: flex; */
     position: absolute;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
+    transform: translate(440px, 25px);
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* height: 150px; */
     width: 10%;
-    flex-shrink: 0;
-    z-index: 1;
+    /* flex-shrink: 0; */
+    /* z-index: 1; */
     border-radius: 50%;
 }
 
 /* Class selectors */
+.navbar-brand {
+    color: #2a607c;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: #2a607c;
+    font-size: 1.2rem;
+}
+
 .portfolio-intro {
     position: absolute;
-    top: 175px;
-    margin: 10px;
-    background-color: #9ebec7;
+    /* top: 175px;
+    margin: 10px; */
+    transform: translate(375px, 190px);
+    /* background-color: #9ebec7; */
+    color: #254D32;
     font-size: 1.5rem;
     padding: 0 5px;
     font-weight: bold;
@@ -119,14 +129,14 @@ section > div {
 }
 
 .portfolio-img {
-    display: inline-flex;
-    justify-content: flex-end;
-    align-items: center;
+    /* display: inline-flex;
+    justify-content: flex-end; */
+    /* align-items: center;*/
     position: relative;
-    height: 250px;
+    height: 350px;
     width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/background_img.jpg");
+    /* margin-bottom: 25px; */
+    background-image: url("../images/header-image.jpeg");
     background-size: cover;
     background-position: center;
 }
