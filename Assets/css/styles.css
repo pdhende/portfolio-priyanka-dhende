@@ -198,6 +198,10 @@ section > div {
     body {
         font-size: 12px;
     }
+    h2 {
+        font-size:1.5rem;
+    }
+
     .portfolio-secondary-app {
         flex-basis: 50%;
     }
@@ -206,6 +210,9 @@ section > div {
 @media screen and (max-width: 768px) {
     body {
         font-size: 10px;
+    }
+    h2 {
+        font-size:1.5rem;
     }
     .portfolio-secondary-app {
         flex-basis: 100%;
@@ -216,5 +223,13 @@ section > div {
     body {
         font-size: 8px;
     }
+    h2 {
+        font-size:1rem;
+    }
+    .portfolio-heading {
+        font-size: 1rem;
+    }
+    .portfolio-contact {
+        font-size: 1rem;
+    }
   }
-
