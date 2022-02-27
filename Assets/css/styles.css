@@ -14,6 +14,7 @@ body {
 h1 {
     color: #254D32;
     transform: translate(375px, 130px);
+    width: fit-content;
     font-weight: bold;
 }
 
@@ -80,6 +81,10 @@ section > div {
     color: #2a607c;
     font-size: 1.2rem;
     font-weight:bold;
+}
+
+.row {
+    margin-right:0px;
 }
 
 .portfolio-intro {
