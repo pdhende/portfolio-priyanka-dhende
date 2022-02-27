@@ -11,11 +11,6 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* header {
-    height: 100px;
-    background-color: #517d9b;
-}*/
-
 h1 {
     color: #254D32;
     transform: translate(375px, 130px);
@@ -35,21 +30,13 @@ h2 {
 }
 
 nav {
-    /* background-color:#9ebec7; */
     background-color:#76BC84;
-    /* background-color:#92C99D; */
 }
 
 ul,
 li {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
-/* a {
-    color: #9ebec7;
-    font-weight: bold;
-    font-size: 25px;
-} */
 
 p {
     line-height: 2em;
@@ -67,7 +54,6 @@ footer {
     font-family: 'Dancing Script', cursive;
     text-align:center;
     color: #2a607c;
-    /* background-color:#76BC84; */
 }
 
 section > div {
@@ -76,15 +62,10 @@ section > div {
 
 /* Id selectors */
 #profile {
-    /* display: flex; */
     position: absolute;
     transform: translate(440px, -25px);
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* height: 150px; */
-    width: 10%;
-    /* flex-shrink: 0; */
-    /* z-index: 1; */
+    max-width:145px;
+    height: auto;
     border-radius: 50%;
 }
 
@@ -94,9 +75,6 @@ section > div {
     font-size: 2rem;
 }
 
-/* .navbar-toggler {
-    border-color:white;
-} */
 
 .nav-link {
     color: #2a607c;
@@ -106,10 +84,7 @@ section > div {
 
 .portfolio-intro {
     position: absolute;
-    /* top: 175px;
-    margin: 10px; */
     transform: translate(380px, 120px);
-    /* background-color: #9ebec7; */
     color: #254D32;
     font-size: 1.5rem;
     padding: 0 5px;
@@ -131,13 +106,9 @@ section > div {
 }
 
 .portfolio-img {
-    /* display: inline-flex;
-    justify-content: flex-end; */
-    /* align-items: center;*/
     position: relative;
     height: 330px;
     width: 100%;
-    /* margin-bottom: 25px; */
     background-image: url("../images/header-image.jpeg");
     background-size: cover;
     background-position: center;
@@ -176,9 +147,7 @@ section > div {
 
 .portfolio-heading {
     position: absolute;
-    /* color: #2a607c; */
     color: #254D32;
-    /* background-color:#9ebec7; */
     background-color:#D6EBD6;
     z-index: 1;
     text-decoration: none;
@@ -190,46 +159,104 @@ section > div {
 
 .portfolio-contact {
     list-style-type: none;
+    display:flex;
     font-size: 1.5rem;
+}
+
+.portfolio-links {
+    padding-left: 20px;
+    text-decoration: underline;
 }
 
 /* Media queries for responsive layout*/
 @media screen and (max-width: 992px) {
-    body {
-        font-size: 12px;
-    }
     h2 {
         font-size:1.5rem;
     }
 
     .portfolio-secondary-app {
-        flex-basis: 50%;
+        flex-basis: 100%;
+    }
+    .portfolio-links {
+        font-size:1.3rem;
     }
 }
 
 @media screen and (max-width: 768px) {
-    body {
-        font-size: 10px;
+    h1 {
+        font-size: 1rem;
+        transform: translate(0px, 180px);
     }
+
     h2 {
-        font-size:1.5rem;
+        font-size:1.2rem;
     }
+
+    .portfolio-intro {
+        font-size:1rem;
+        transform: translate(0px, 170px);
+    }
+
     .portfolio-secondary-app {
         flex-basis: 100%;
+    }
+    .portfolio-links {
+        font-size:1.3rem;
+    }
+
+    #profile {
+        transform: translate(0px, 25px);
     }
   }
   
 @media screen and (max-width: 576px) {
-    body {
-        font-size: 8px;
+    h1 {
+        font-size: 1rem;
+        transform: translate(0px, 180px);
     }
-    h2 {
+
+    h2,
+    h5,
+    h6 {
+        font-size:0.9rem;
+    }
+    .portfolio-img {
+        height: 300px;
+    }
+
+    .portfolio-intro {
         font-size:1rem;
+        transform: translate(0px, 170px);
     }
+
+    .portfolio-title {
+        padding-right:0px;
+    }
+
+    .portfolio-para {
+        font-size:0.9rem;
+    }
+
     .portfolio-heading {
         font-size: 1rem;
     }
+
     .portfolio-contact {
         font-size: 1rem;
+        display: block;
+    }
+
+    .portfolio-links {
+        font-size:1rem;
+    }
+
+    #profile {
+        transform: translate(0px, 25px);
     }
   }
+
+  @media screen and (max-width: 380px) {
+    #profile {
+        transform: translate(0px, 25px);
+    }
+}
