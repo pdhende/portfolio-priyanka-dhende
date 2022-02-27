@@ -145,6 +145,10 @@ section > div {
     border: 5px solid #9ebec7;
 }
 
+.portfolio-imag-main {
+    height: 450px;
+}
+
 .portfolio-heading {
     position: absolute;
     color: #254D32;
@@ -170,8 +174,18 @@ section > div {
 
 /* Media queries for responsive layout*/
 @media screen and (max-width: 992px) {
+    h1 {
+        font-size: 1rem;
+        transform: translate(0px, 180px);
+    }
+
     h2 {
         font-size:1.5rem;
+    }
+
+    .portfolio-intro {
+        font-size:1rem;
+        transform: translate(0px, 170px);
     }
 
     .portfolio-secondary-app {
@@ -179,6 +193,10 @@ section > div {
     }
     .portfolio-links {
         font-size:1.3rem;
+    }
+
+    #profile {
+        transform: translate(0px, 25px);
     }
 }
 
