@@ -7,7 +7,8 @@ Work : It has links to all my deployed applications
 Contact Me : I have provided my contact details
 
 Screenshot :
-![screencapture-pdhende-github-io-portfolio-priyanka-dhende-2022-02-26-21_53_41](https://user-images.githubusercontent.com/65467469/155866266-b7c1b8c2-59ea-4b5f-b1ed-4970056bb5aa.png)
+![image](https://user-images.githubusercontent.com/65467469/164954691-3710a301-1723-43a3-8c7c-1a80a82a0a81.png)
+
 
 
 URL of deployed application:
